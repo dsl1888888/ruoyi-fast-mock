@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<th:block th:include="include :: header('选项卡 & 面板')" />
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeIn">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true"> 运营情况</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false"> 还款</a>
+                        </li>
+<!--                        <li class=""><a data-toggle="tab" href="#tab-3" aria-expanded="false"> 到期</a>-->
+<!--                        </li>-->
+                        <li class=""><a data-toggle="tab" href="#tab-4" aria-expanded="false"> 放款</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+<!--                             <div class="panel-body"> -->
+<!--                                 <strong>HTML5 文档类型</strong> -->
+<!--                                 <p>Bootstrap 使用到的某些 HTML 元素和 CSS 属性需要将页面设置为 HTML5 文档类型。在你项目中的每个页面都要参照下面的格式进行设置。</p> -->
+<!--                             </div> -->
+							<div class="panel-body">
+								<div class="container-div">
+							        <div class="row">
+<!-- 							            <div class="col-sm-12 search-collapse"> -->
+<!-- 							                <form id="formId00"> -->
+<!-- 							                    <div class="select-list"> -->
+<!-- 							                        <ul> -->
+<!-- 								                        <li class="select-time"> -->
+<!-- 															<label>申请时间： </label> -->
+<!-- 															<input type="text" class="time-input" id="startTime00" placeholder="开始时间" name="a0StartTimeReq"/> -->
+<!-- 															<span>-</span> -->
+<!-- 															<input type="text" class="time-input" id="endTime00" placeholder="结束时间" name="a0EndTimeReq"/> -->
+<!-- 														</li> -->
+<!-- 							                            <li> -->
+<!-- 							                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search('formId00', 'bootstrap-table00')"><i class="fa fa-search"></i>&nbsp;搜索</a> -->
+<!-- 								    						<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('formId00', 'bootstrap-table00')"><i class="fa fa-refresh"></i>&nbsp;重置</a> -->
+<!-- 							                            </li> -->
+<!-- 							                        </ul> -->
+<!-- 							                    </div> -->
+<!-- 							                </form> -->
+<!-- 							            </div> -->
+							
+							            <div class="btn-group-sm" id="toolbar00" role="group">
+							<!--                 <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="system:shoudai:add"> -->
+							<!--                     <i class="fa fa-plus"></i> 添加 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-primary single disabled" onclick="$.operate.edit()" shiro:hasPermission="system:shoudai:edit"> -->
+							<!--                     <i class="fa fa-edit"></i> 修改 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-danger multiple disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:shoudai:remove"> -->
+							<!--                     <i class="fa fa-remove"></i> 删除 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:shoudai:export"> -->
+							<!--                     <i class="fa fa-download"></i> 导出 -->
+							<!--                 </a> -->
+							            </div>
+							            <div class="col-sm-12 select-table table-striped">
+							                <table id="bootstrap-table00"></table>
+							            </div>
+							        </div>
+							    </div>
+						    </div>
+						    
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+<!--                             <div class="panel-body"> -->
+<!--                                 <strong>移动设备优先</strong> -->
+<!--                                 <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p> -->
+<!--                             </div> -->
+							<div class="panel-body">
+								<div class="container-div">
+							        <div class="row">
+							            <div class="col-sm-12 search-collapse">
+							                <form id="formId02">
+							                    <div class="select-list">
+							                        <ul>
+							                          <li class="select-time">
+														<label>到期时间： </label>
+														<input type="text" class="time-input" id="startTime02" placeholder="开始时间" name="a0StartTimeReq"/>
+														<span>-</span>
+														<input type="text" class="time-input" id="endTime02" placeholder="结束时间" name="a0EndTimeReq"/>
+													</li>
+															
+							                            <li>
+							                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search('formId02', 'bootstrap-table02')"><i class="fa fa-search"></i>&nbsp;搜索</a>
+								    						<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('formId02', 'bootstrap-table02')"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+							                            </li>
+							                        </ul>
+							                    </div>
+							                </form>
+							            </div>
+							
+							            <div class="btn-group-sm" id="toolbar02" role="group">
+							<!--                 <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="system:fudai:add"> -->
+							<!--                     <i class="fa fa-plus"></i> 添加 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-primary single disabled" onclick="$.operate.edit()" shiro:hasPermission="system:fudai:edit"> -->
+							<!--                     <i class="fa fa-edit"></i> 修改 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-danger multiple disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:fudai:remove"> -->
+							<!--                     <i class="fa fa-remove"></i> 删除 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:fudai:export"> -->
+							<!--                     <i class="fa fa-download"></i> 导出 -->
+							<!--                 </a> -->
+							            </div>
+							            <div class="col-sm-12 select-table table-striped">
+							                <table id="bootstrap-table02"></table>
+							            </div>
+							        </div>
+							    </div>
+						    </div>
+                        </div>
+                        
+                        <div id="tab-3" class="tab-pane">
+<!--                             <div class="panel-body"> -->
+<!--                                 <strong>移动设备优先</strong> -->
+<!--                                 <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p> -->
+<!--                             </div> -->
+							<div class="panel-body">
+								<div class="container-div">
+							        <div class="row">
+							            <div class="col-sm-12 search-collapse">
+							                <form id="formId03">
+							                    <div class="select-list">
+							                        <ul>
+							                          <li class="select-time">
+														<label>到期时间： </label>
+														<input type="text" class="time-input" id="startTime03" placeholder="开始时间" name="a0StartTimeReq"/>
+														<span>-</span>
+														<input type="text" class="time-input" id="endTime03" placeholder="结束时间" name="a0EndTimeReq"/>
+													</li>
+															
+							                            <li>
+							                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search('formId03', 'bootstrap-table03')"><i class="fa fa-search"></i>&nbsp;搜索</a>
+								    						<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('formId03', 'bootstrap-table03')"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+							                            </li>
+							                        </ul>
+							                    </div>
+							                </form>
+							            </div>
+							
+							            <div class="btn-group-sm" id="toolbar03" role="group">
+							<!--                 <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="system:fudai:add"> -->
+							<!--                     <i class="fa fa-plus"></i> 添加 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-primary single disabled" onclick="$.operate.edit()" shiro:hasPermission="system:fudai:edit"> -->
+							<!--                     <i class="fa fa-edit"></i> 修改 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-danger multiple disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:fudai:remove"> -->
+							<!--                     <i class="fa fa-remove"></i> 删除 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:fudai:export"> -->
+							<!--                     <i class="fa fa-download"></i> 导出 -->
+							<!--                 </a> -->
+							            </div>
+							            <div class="col-sm-12 select-table table-striped">
+							                <table id="bootstrap-table03"></table>
+							            </div>
+							        </div>
+							    </div>
+						    </div>
+                        </div>
+                        
+                        
+                        <div id="tab-4" class="tab-pane">
+<!--                             <div class="panel-body"> -->
+<!--                                 <strong>移动设备优先</strong> -->
+<!--                                 <p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3 中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap 是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p> -->
+<!--                             </div> -->
+							<div class="panel-body">
+								<div class="container-div">
+							        <div class="row">
+							            <div class="col-sm-12 search-collapse">
+							                <form id="formId04">
+							                    <div class="select-list">
+							                        <ul>
+							                          <li class="select-time">
+														<label>申请时间： </label>
+														<input type="text" class="time-input" id="startTime04" placeholder="开始时间" name="a0StartTimeReq"/>
+														<span>-</span>
+														<input type="text" class="time-input" id="endTime04" placeholder="结束时间" name="a0EndTimeReq"/>
+													</li>
+															
+							                            <li>
+							                                <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search('formId04', 'bootstrap-table04')"><i class="fa fa-search"></i>&nbsp;搜索</a>
+								    						<a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('formId04', 'bootstrap-table04')"><i class="fa fa-refresh"></i>&nbsp;重置</a>
+							                            </li>
+							                        </ul>
+							                    </div>
+							                </form>
+							            </div>
+							
+							            <div class="btn-group-sm" id="toolbar04" role="group">
+							<!--                 <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="system:fudai:add"> -->
+							<!--                     <i class="fa fa-plus"></i> 添加 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-primary single disabled" onclick="$.operate.edit()" shiro:hasPermission="system:fudai:edit"> -->
+							<!--                     <i class="fa fa-edit"></i> 修改 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-danger multiple disabled" onclick="$.operate.removeAll()" shiro:hasPermission="system:fudai:remove"> -->
+							<!--                     <i class="fa fa-remove"></i> 删除 -->
+							<!--                 </a> -->
+							<!--                 <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:fudai:export"> -->
+							<!--                     <i class="fa fa-download"></i> 导出 -->
+							<!--                 </a> -->
+							            </div>
+							            <div class="col-sm-12 select-table table-striped">
+							                <table id="bootstrap-table04"></table>
+							            </div>
+							        </div>
+							    </div>
+						    </div>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+ 
+ 
+ 
+    </div>
+    <th:block th:include="include :: footer" />
+     <script th:inline="javascript">
+         
+
+        var editFlag00 = [[${@permission.hasPermi('system:yuanyingqingkuan:edit')}]];
+        var removeFlag00 = [[${@permission.hasPermi('system:yuanyingqingkuan:remove')}]];
+        var prefix00 = ctx + "system/yuanyingqingkuan";
+
+        $(function() {
+            var options = {
+            	id: "bootstrap-table00",
+                toolbar: "toolbar00",
+                url: prefix00 + "/list",
+                createUrl: prefix00 + "/add",
+                updateUrl: prefix00 + "/edit/{id}",
+                removeUrl: prefix00 + "/remove",
+                exportUrl: prefix00 + "/export",
+                modalName: "【请填写功能名称】",
+                columns: [{
+                    checkbox: false
+                },
+//                 {
+//                     field: 'a0',
+//                     title: '展示日期'
+//                 },
+                {
+                    field: 'a1',
+                    title: '注册用户数'
+                },
+                {
+                    field: 'a2',
+                    title: '首贷用户数'
+                },
+                {
+                    field: 'a3',
+                    title: '复贷用户数'
+                },
+                {
+                    field: 'a4',
+                    title: '有效用户比',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a5',
+                    title: '放款总额	'
+                },
+                {
+                    field: 'a6',
+                    title: '还款总额'
+                },
+                {
+                    field: 'a7',
+                    title: '待收总额'
+                },
+                {
+                    field: 'a8',
+                    title: '未逾待收总额'
+                },
+                {
+                    field: 'a9',
+                    title: '今日放款金额'
+                },
+                {
+                    field: 'a10',
+                    title: '今日放款单数'
+                },
+                {
+                    field: 'a11',
+                    title: '今日还款金额'
+                },
+                {
+                    field: 'a12',
+                    title: '今日还款单数'
+                },
+                {
+                    field: 'a13',
+                    title: '今日回退金额'
+                },
+                {
+                    field: 'a14',
+                    title: '今日回退单数'
+                },
+                {
+                    field: 'a15',
+                    title: '今日待收金额'
+                },
+                {
+                    field: 'a16',
+                    title: '逾期待收总额'
+                },
+                {
+                    field: 'a17',
+                    title: '3日内逾期待收'
+                },
+                {
+                    field: 'a18',
+                    title: '7日内逾期待收'
+                },
+                {
+                    field: 'a19',
+                    title: '15日内逾期待收'
+                },
+                {
+                    field: 'id',
+                    title: 'id',
+                    visible: false
+                }
+//                 ,
+//                 {
+//                     title: '操作',
+//                     align: 'center',
+//                     formatter: function(value, row, index) {
+//                         var actions = [];
+//                         actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.id + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+//                         actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.id + '\')"><i class="fa fa-remove"></i>删除</a>');
+//                         return actions.join('');
+//                     }
+//                 }
+                ]
+            };
+            $.table.init(options);
+        });
+        
+        
+        var editFlag02 = [[${@permission.hasPermi('system:yinghuanqieshijihuanqing:edit')}]];
+        var removeFlag02 = [[${@permission.hasPermi('system:yinghuanqieshijihuanqing:remove')}]];
+        var prefix02 = ctx + "system/yinghuanqieshijihuanqing";
+
+        $(function() {
+            var options = {
+                id: "bootstrap-table02",
+                toolbar: "toolbar02",
+                url: prefix02 + "/list",
+                createUrl: prefix02 + "/add",
+                updateUrl: prefix02 + "/edit/{id}",
+                removeUrl: prefix02 + "/remove",
+                exportUrl: prefix02 + "/export",
+                modalName: "【请填写功能名称】",
+                columns: [{
+                    checkbox: true
+                },
+                {
+                    field: 'a0',
+                    title: '日期'
+                },
+                {
+                    field: 'a1',
+                    title: '应还单数'
+                },
+                {
+                    field: 'a2',
+                    title: '实际还清单数'
+                },
+                {
+                    field: 'a3',
+                    title: '当天到期且还款订单数占比',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a4',
+                    title: '未还清单数'
+                },
+                {
+                    field: 'a5',
+                    title: '还款率',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a6',
+                    title: '新客还清率',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a7',
+                    title: '老客还清率',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a8',
+                    title: '还款并复贷单数'
+                },
+                {
+                    field: 'a9',
+                    title: '复贷率（单数占比）',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'id',
+                    title: 'id',
+                    visible: false
+                }
+//                 ,
+//                 {
+//                     title: '操作',
+//                     align: 'center',
+//                     formatter: function(value, row, index) {
+//                         var actions = [];
+//                         actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.id + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+//                         actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.id + '\')"><i class="fa fa-remove"></i>删除</a>');
+//                         return actions.join('');
+//                     }
+//                 }
+                ]
+            };
+            $.table.init(options);
+        });
+        
+        var editFlag03 = [[${@permission.hasPermi('system:yunyingbaobiao4:edit')}]];
+        var removeFlag03 = [[${@permission.hasPermi('system:yunyingbaobiao4:remove')}]];
+        var prefix03 = ctx + "system/yunyingbaobiao4";
+
+        $(function() {
+            var options = {
+            	id: "bootstrap-table03",
+                toolbar: "toolbar03",
+                url: prefix03 + "/list",
+                createUrl: prefix03 + "/add",
+                updateUrl: prefix03 + "/edit/{id}",
+                removeUrl: prefix03 + "/remove",
+                exportUrl: prefix03 + "/export",
+                modalName: "【请填写功能名称】",
+                columns: [{
+                    checkbox: true
+                },
+                {
+                    field: 'a0',
+                    title: '日期'
+                },
+                {
+                    field: 'a1',
+                    title: '应还单数'
+                },
+                {
+                    field: 'a2',
+                    title: '应还金额'
+                },
+                {
+                    field: 'a3',
+                    title: '实际还款金额'
+                },
+                {
+                    field: 'a4',
+                    title: '已还清单数'
+                },
+                {
+                    field: 'a5',
+                    title: '未还金额'
+                },
+                {
+                    field: 'a6',
+                    title: '未还清单数'
+                },
+                {
+                    field: 'a7',
+                    title: '还款率',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'id',
+                    title: 'id',
+                    visible: false
+                }
+//                 ,
+//                 {
+//                     title: '操作',
+//                     align: 'center',
+//                     formatter: function(value, row, index) {
+//                         var actions = [];
+//                         actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.id + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+//                         actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.id + '\')"><i class="fa fa-remove"></i>删除</a>');
+//                         return actions.join('');
+//                     }
+//                 }
+                ]
+            };
+            $.table.init(options);
+        });
+        
+        
+        var editFlag04 = [[${@permission.hasPermi('system:fangkuan:edit')}]];
+        var removeFlag04 = [[${@permission.hasPermi('system:fangkuan:remove')}]];
+        var prefix04 = ctx + "system/fangkuan";
+
+        $(function() {
+            var options = {
+            	id: "bootstrap-table04",
+                toolbar: "toolbar04",
+                url: prefix04 + "/list",
+                createUrl: prefix04 + "/add",
+                updateUrl: prefix04 + "/edit/{id}",
+                removeUrl: prefix04 + "/remove",
+                exportUrl: prefix04 + "/export",
+                modalName: "【请填写功能名称】",
+                columns: [{
+                    checkbox: true
+                },
+                {
+                    field: 'a0',
+                    title: '日期'
+                },
+                {
+                    field: 'a1',
+                    title: '放款单数'
+                },
+                {
+                    field: 'a2',
+                    title: '放款金额'
+                },
+                {
+                    field: 'a3',
+                    title: '首贷单数'
+                },
+                {
+                    field: 'a4',
+                    title: '首贷订单数占比',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'a5',
+                    title: '复贷放款单数'
+                },
+                {
+                    field: 'a6',
+                    title: '复贷单数占比',
+                    formatter: function(value){
+        				if (value){
+        					return parseFloat(value*100).toFixed(2)  + "%";
+        				} else {
+        					return value;
+        				}
+        			}
+                },
+                {
+                    field: 'id',
+                    title: 'id',
+                    visible: false
+                }
+//                 ,
+//                 {
+//                     title: '操作',
+//                     align: 'center',
+//                     formatter: function(value, row, index) {
+//                         var actions = [];
+//                         actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.id + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+//                         actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.id + '\')"><i class="fa fa-remove"></i>删除</a>');
+//                         return actions.join('');
+//                     }
+//                 }
+                ]
+            };
+            $.table.init(options);
+        });
+        
+        
+    </script>
+</body>
+</html>

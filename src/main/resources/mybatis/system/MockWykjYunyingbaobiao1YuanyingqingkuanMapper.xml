@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.yuanyingqingkuan.mapper.MockWykjYunyingbaobiao1YuanyingqingkuanMapper">
+    
+    <resultMap type="MockWykjYunyingbaobiao1Yuanyingqingkuan" id="MockWykjYunyingbaobiao1YuanyingqingkuanResult">
+        <result property="a0"    column="a0"    />
+        <result property="a1"    column="a1"    />
+        <result property="a2"    column="a2"    />
+        <result property="a3"    column="a3"    />
+        <result property="a4"    column="a4"    />
+        <result property="a5"    column="a5"    />
+        <result property="a6"    column="a6"    />
+        <result property="a7"    column="a7"    />
+        <result property="a8"    column="a8"    />
+        <result property="a9"    column="a9"    />
+        <result property="a10"    column="a10"    />
+        <result property="a11"    column="a11"    />
+        <result property="a12"    column="a12"    />
+        <result property="a13"    column="a13"    />
+        <result property="a14"    column="a14"    />
+        <result property="a15"    column="a15"    />
+        <result property="a16"    column="a16"    />
+        <result property="a17"    column="a17"    />
+        <result property="a18"    column="a18"    />
+        <result property="a19"    column="a19"    />
+        <result property="id"    column="id"    />
+    </resultMap>
+
+    <sql id="selectMockWykjYunyingbaobiao1YuanyingqingkuanVo">
+        select a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, id from mock_wykj_yunyingbaobiao1_yuanyingqingkuan
+    </sql>
+
+    <select id="selectMockWykjYunyingbaobiao1YuanyingqingkuanList" parameterType="MockWykjYunyingbaobiao1Yuanyingqingkuan" resultMap="MockWykjYunyingbaobiao1YuanyingqingkuanResult">
+        <include refid="selectMockWykjYunyingbaobiao1YuanyingqingkuanVo"/>
+        <where>  
+            <if test="a0 != null  and a0 != ''"> and a0 = #{a0}</if>
+            <if test="a1 != null  and a1 != ''"> and a1 = #{a1}</if>
+            <if test="a2 != null  and a2 != ''"> and a2 = #{a2}</if>
+            <if test="a3 != null  and a3 != ''"> and a3 = #{a3}</if>
+            <if test="a4 != null  and a4 != ''"> and a4 = #{a4}</if>
+            <if test="a5 != null  and a5 != ''"> and a5 = #{a5}</if>
+            <if test="a6 != null  and a6 != ''"> and a6 = #{a6}</if>
+            <if test="a7 != null  and a7 != ''"> and a7 = #{a7}</if>
+            <if test="a8 != null  and a8 != ''"> and a8 = #{a8}</if>
+            <if test="a9 != null  and a9 != ''"> and a9 = #{a9}</if>
+            <if test="a10 != null  and a10 != ''"> and a10 = #{a10}</if>
+            <if test="a11 != null  and a11 != ''"> and a11 = #{a11}</if>
+            <if test="a12 != null  and a12 != ''"> and a12 = #{a12}</if>
+            <if test="a13 != null  and a13 != ''"> and a13 = #{a13}</if>
+            <if test="a14 != null  and a14 != ''"> and a14 = #{a14}</if>
+            <if test="a15 != null  and a15 != ''"> and a15 = #{a15}</if>
+            <if test="a16 != null  and a16 != ''"> and a16 = #{a16}</if>
+            <if test="a17 != null  and a17 != ''"> and a17 = #{a17}</if>
+            <if test="a18 != null  and a18 != ''"> and a18 = #{a18}</if>
+            <if test="a19 != null  and a19 != ''"> and a19 = #{a19}</if>
+        	<if test="a0StartTimeReq != null  and a0StartTimeReq != '' "> and a0 <![CDATA[ >= ]]> #{a0StartTimeReq}</if>
+            <if test="a0EndTimeReq != null  and a0EndTimeReq != '' "> and a0 <![CDATA[ <= ]]> #{a0EndTimeReq}</if>
+            
+        </where>
+        
+        order by id desc
+    </select>
+    
+    <select id="selectMockWykjYunyingbaobiao1YuanyingqingkuanById" parameterType="Long" resultMap="MockWykjYunyingbaobiao1YuanyingqingkuanResult">
+        <include refid="selectMockWykjYunyingbaobiao1YuanyingqingkuanVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertMockWykjYunyingbaobiao1Yuanyingqingkuan" parameterType="MockWykjYunyingbaobiao1Yuanyingqingkuan" useGeneratedKeys="true" keyProperty="id">
+        insert into mock_wykj_yunyingbaobiao1_yuanyingqingkuan
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="a0 != null">a0,</if>
+            <if test="a1 != null">a1,</if>
+            <if test="a2 != null">a2,</if>
+            <if test="a3 != null">a3,</if>
+            <if test="a4 != null">a4,</if>
+            <if test="a5 != null">a5,</if>
+            <if test="a6 != null">a6,</if>
+            <if test="a7 != null">a7,</if>
+            <if test="a8 != null">a8,</if>
+            <if test="a9 != null">a9,</if>
+            <if test="a10 != null">a10,</if>
+            <if test="a11 != null">a11,</if>
+            <if test="a12 != null">a12,</if>
+            <if test="a13 != null">a13,</if>
+            <if test="a14 != null">a14,</if>
+            <if test="a15 != null">a15,</if>
+            <if test="a16 != null">a16,</if>
+            <if test="a17 != null">a17,</if>
+            <if test="a18 != null">a18,</if>
+            <if test="a19 != null">a19,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="a0 != null">#{a0},</if>
+            <if test="a1 != null">#{a1},</if>
+            <if test="a2 != null">#{a2},</if>
+            <if test="a3 != null">#{a3},</if>
+            <if test="a4 != null">#{a4},</if>
+            <if test="a5 != null">#{a5},</if>
+            <if test="a6 != null">#{a6},</if>
+            <if test="a7 != null">#{a7},</if>
+            <if test="a8 != null">#{a8},</if>
+            <if test="a9 != null">#{a9},</if>
+            <if test="a10 != null">#{a10},</if>
+            <if test="a11 != null">#{a11},</if>
+            <if test="a12 != null">#{a12},</if>
+            <if test="a13 != null">#{a13},</if>
+            <if test="a14 != null">#{a14},</if>
+            <if test="a15 != null">#{a15},</if>
+            <if test="a16 != null">#{a16},</if>
+            <if test="a17 != null">#{a17},</if>
+            <if test="a18 != null">#{a18},</if>
+            <if test="a19 != null">#{a19},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMockWykjYunyingbaobiao1Yuanyingqingkuan" parameterType="MockWykjYunyingbaobiao1Yuanyingqingkuan">
+        update mock_wykj_yunyingbaobiao1_yuanyingqingkuan
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="a0 != null">a0 = #{a0},</if>
+            <if test="a1 != null">a1 = #{a1},</if>
+            <if test="a2 != null">a2 = #{a2},</if>
+            <if test="a3 != null">a3 = #{a3},</if>
+            <if test="a4 != null">a4 = #{a4},</if>
+            <if test="a5 != null">a5 = #{a5},</if>
+            <if test="a6 != null">a6 = #{a6},</if>
+            <if test="a7 != null">a7 = #{a7},</if>
+            <if test="a8 != null">a8 = #{a8},</if>
+            <if test="a9 != null">a9 = #{a9},</if>
+            <if test="a10 != null">a10 = #{a10},</if>
+            <if test="a11 != null">a11 = #{a11},</if>
+            <if test="a12 != null">a12 = #{a12},</if>
+            <if test="a13 != null">a13 = #{a13},</if>
+            <if test="a14 != null">a14 = #{a14},</if>
+            <if test="a15 != null">a15 = #{a15},</if>
+            <if test="a16 != null">a16 = #{a16},</if>
+            <if test="a17 != null">a17 = #{a17},</if>
+            <if test="a18 != null">a18 = #{a18},</if>
+            <if test="a19 != null">a19 = #{a19},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMockWykjYunyingbaobiao1YuanyingqingkuanById" parameterType="Long">
+        delete from mock_wykj_yunyingbaobiao1_yuanyingqingkuan where id = #{id}
+    </delete>
+
+    <delete id="deleteMockWykjYunyingbaobiao1YuanyingqingkuanByIds" parameterType="String">
+        delete from mock_wykj_yunyingbaobiao1_yuanyingqingkuan where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+</mapper>
